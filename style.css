@@ -1,0 +1,32 @@
+body{
+  background-color: #9cc5a1;
+
+}
+
+#title{
+  text-align: center;
+}
+
+#survey-form{
+  background-color: #dce1de;
+  margin: 60px 200px 20px 200px;
+
+}
+
+.together{
+  padding: 5px 10px 0 20px;
+}
+
+.different{
+  padding: 5px 20px 0 20px;
+}
+
+#description{
+  text-align: center;
+  padding-top: 30px;
+}
+
+btn{
+  padding-bottom: 20px;
+  padding-left: 30px;
+}

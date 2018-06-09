@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 id="title">Survey Form</h1>
+  <form id="survey-form">
+    <p id="description" class"together">Let us know how we can improve freeCodeCamp</p>
+
+    <!-- information about user-->
+
+    <div class="form-group row different">
+      <label for="input-name" class="col-sm-1 col-form-label" id="name-label">*Name:</label>
+      <div class="col-sm-5">
+        <input type="name" class="form-control" id="name" placeholder="Enter your name" required>
+      </div><!--col-sm-5-->
+    </div><!--form-group row-->
+
+    <div class="form-group row different">
+      <label for="input-email" class="col-sm-1 col-form-label" id="email-label">*Email:</label>
+      <div class="col-sm-5">
+        <input type="email" class="form-control" size="35" maxLength="35" id="email" placeholder="Enter your email" pattern=".+@beststartupever.com" required>
+      </div><!--col-sm-5-->
+    </div><!--form-group row-->
+
+      <div class="form-group row different">
+        <label for="input-age" class="col-sm-1 col-form-label" id="number-label">*Age:</label>
+        <div class="col-sm-5">
+          <input type="number" class="form-control" id="number" placeholder="Age" step="1" min="1" max="200" required>
+        </div><!--col-sm-5-->
+      </div><!--form-group row-->
+
+      <!--dropdown bar first one-->
+      <div class="form-group row together">
+        <label for="role" class="col-sm-6 col-form-label">Which option describes your current role?</label>
+        <div class="col-sm-5" id="dropdown">
+          <select class="form-control">
+            <option value="select an option" disabled>Select an option</option>
+            <option value="student" selected>Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer not to say">Prefer Not To Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div><!--col-sm-5-->
+      </div><!--form-group row-->
+
+      <!--radio section for options -->
+      <fieldset class="form-group together">
+        <div class="row">
+          <legend class="col-form-label col-sm-6 pt-0">*How likely is it that you would recommend freeCodeCamp to a friend?</legend>
+          <div class="col-sm-5">
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="rec-radio" id="recommend1" value="definitely">
+              <label class="form-check-label" for="recommend1">Definitely</label>
+            </div><!--form-check-->
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="rec-radio" id="recommend2" value="maybe">
+              <label class="form-check-label" for="recommend2">Maybe</label>
+            </div><!--form-check-->
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="rec-radio" id="recommend3" value="notsure">
+              <label class="form-check-label" for="recommend3">Not Sure</label>
+            </div><!--form-check-->
+
+          </div><!--col-sm-5-->
+        </div>
+      </fieldset>
+
+      <!-- dropdown #2 section -->
+      <div class="form-group row together">
+        <label for="role" class="col-sm-5 col-form-label">What do you like most in FCC:</label>
+        <div class="col-sm-5">
+          <select class="form-control">
+            <option value="select-an-option" selected disabled>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+          </select>
+        </div><!--col-sm-5-->
+      </div><!--form-group row-->
+
+
+      <!--checkbox section-->
+      <div class="form-group row together">
+        <legend class="col-sm-6 col-form-label">Things that should be improved in the future<br> <span>(Check all that apply):</span></legend>
+          <div class="col-sm-5">
+            <div class="form-check">
+              <input class="form-check-input" value="front-projects" type="checkbox" id="front-end">
+              <label class="form-check-label"  for="front-end">Front-end Projects</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input" value="back-projects"  type="checkbox" id="back-end">
+              <label class="form-check-label"  for="back-end">Back-end Projects</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input"  value="data" type="checkbox" id="data">
+              <label class="form-check-label" for="data">Data Visualization</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input" value="challenges" type="checkbox" id="challenge">
+              <label class="form-check-label"  for="challenge">Challenges</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input" value="open-source" type="checkbox" id="open-source-community">
+              <label class="form-check-label"  for="open-source-community">Open Source Community</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input" value="gitter" type="checkbox" id="gitter">
+              <label class="form-check-label"  for="gitter">Gitter help rooms</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input" value="videos" type="checkbox" id="videos">
+              <label class="form-check-label"  for="videos">Videos</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input"  value="city"  type="checkbox" id="city">
+              <label class="form-check-label" for="city">City Meetups</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input" value="forum" type="checkbox" id="wiki">
+              <label class="form-check-label"  for="wiki">Wiki</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input" value="forum" type="checkbox" id="forum">
+              <label class="form-check-label"  for="forum">Forum</label>
+            </div><!--form-check-->
+            <div class="form-check">
+              <input class="form-check-input" value="additional" type="checkbox" id="additional">
+              <label class="form-check-label" for="additional">Additional Courses</label>
+            </div><!--form-check-->
+          </div><!--col sm 5-->
+      </div><!--form group row-->
+
+
+      <!--comment section-->
+      <div class="input-group row together">
+        <legend class="col-sm-5 col-form-label">Any Comments or Suggestions?</legend>
+        <div class="col-sm-5">
+          <textarea class="form-control" aria-label="textarea"></textarea>
+        </div><!--col sm 5-->
+      </div><!-- form group row-->
+
+      <!--submit button -->
+      <button class="btn btn-primary together" type="submit" id="submit">Submit</button>
+  </form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
